@@ -24,6 +24,7 @@ namespace Epsid19.WEB.Controllers
         {
             var contexte = _context.InjectionsPersonnes.Include(i => i.Injections).Include(i => i.Personnes);
             return View(await contexte.ToListAsync());
+            
         }
 
         // GET: InjectionsPersonnes/Details/5
