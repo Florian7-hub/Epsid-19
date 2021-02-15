@@ -52,6 +52,8 @@ namespace Epsid19.WEB.Controllers
         {
             ViewData["InjectionsId"] = new SelectList(_context.Injections, "Id", "Id");
             ViewData["PersonnesId"] = new SelectList(_context.Personnes, "Id", "Id");
+            ViewData["InjectionsType"] = new SelectList(_context.Injections, "Id", "TypeVaccin");
+            ViewData["PersonnesNom"] = new SelectList(_context.Personnes, "Id", "Nom");
             return View();
         }
 

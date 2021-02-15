@@ -13,7 +13,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Injections)
+                Type de vaccin
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Personnes)
@@ -25,10 +25,10 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Injections.Id)
+                @Html.DisplayFor(modelItem => item.Injections.TypeVaccin)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Personnes.Id)
+                @Html.DisplayFor(modelItem => item.Personnes.Nom)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
